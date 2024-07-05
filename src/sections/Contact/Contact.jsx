@@ -26,7 +26,7 @@ const Contact = () => {
       <div className={styles.footerBottom}>
       <p>
         &copy; Copyright &copy; 2024 All Rights reserved | This portfolio made
-        by <span style={{color: "#0987f2"}} >Mansoor Pathikonda</span>. <br />
+        by <span style={{color: "#0987f2"}} >Mansoor Pathikonda</span><br />
       </p>
       </div>
     </div>
