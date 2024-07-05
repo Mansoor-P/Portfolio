@@ -1,13 +1,18 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-function ProjectCard({ src, link, h3, p }) {
+function ProjectCard({ title, image }) {
   return (
-    <a href={link} target="_blank">
-      <img className="hover" src={src} alt={`${h3} logo`} />
-      <h3>{h3}</h3>
-      <p>{p}</p>
-    </a>
+    <div className="projectCard">
+      <img src={image} alt={title} className="projectImage" />
+      <h2 className="projectTitle">{title}</h2>
+    </div>
   );
 }
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
 export default ProjectCard;
