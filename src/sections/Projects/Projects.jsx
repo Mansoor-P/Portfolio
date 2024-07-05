@@ -14,35 +14,39 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={job}
-          link="https://mj-career.netlify.app/"
+          linkGit="https://mj-career.netlify.app/"
+          linkDemo="https://mj-career.netlify.app/"
           h3="Job Searching Portal"
           p=" A dynamic web application "
         />
         <ProjectCard
           src={food}
-          link="https://github.com/Mansoor-P/food-delivery-app"
+          linkGit="https://github.com/Mansoor-P/food-delivery-app"
+          linkDemo="https://mansoorfoodapp.netlify.app/"
           h3="Food  Delivering App"
           p="Hamburger Restaurant"
         />
         <ProjectCard
           src={portfolio}
-          link="https://github.com/Mansoor-P/Portfolio"
+          linkGit="https://github.com/Mansoor-P/Portfolio"
+          linkDemo="https://mansoorsportfolio.netlify.app/"
           h3="Portfolio"
           p="portfolio"
         />
         <ProjectCard
           src={Ecart}
-          link="https://github.com/Mansoor-P/E-Commerce-Website"
+          linkGit="https://github.com/Mansoor-P/E-Commerce-Website"
+          linkDemo=""
           h3="E-Cart"
           p="E-cart"
         />
         <ProjectCard
           src={Hotel}
-          link="https://github.com/Mansoor-P/hotel_booking"
+          linkGit="https://github.com/Mansoor-P/hotel_booking"
+          linkDemo=""
           h3="Hotel Booking Aeb App"
           p="Hotel Booking Aeb App"
         />
-     
       </div>
     </section>
   );

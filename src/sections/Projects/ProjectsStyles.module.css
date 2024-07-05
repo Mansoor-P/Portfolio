@@ -3,8 +3,8 @@
   flex-direction: column;
   text-align: center;
 
-  a {
-    width: 350px;
+  .a {
+    width: 300px;
     text-decoration: none;
     color: #222;
     transition: transform 200ms ease-in-out;
@@ -13,8 +13,12 @@
     border-radius: 10px;
   }
 
-  a:hover {
+  button a:hover {
     transform: scale(1.05);
+  }
+  button a {
+    text-decoration: none;
+    color: white;
   }
 
   img {
