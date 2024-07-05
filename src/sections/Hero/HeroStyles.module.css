@@ -81,24 +81,6 @@ button:active {
   gap: 20px;
 }
 
-.up_button {
-  text-decoration: none;
-  color: black;
-  border: 1px solid #0987f2;
-  border-radius: 50px;
-  padding: 10px 20px;
-  position: fixed;
-  bottom: 60px;
-  right: 40px;
-  background-color: #0987f2;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  animation: blink 1s infinite alternate;
-}
-
-.arrow {
-  color: white;
-}
-
 @media (min-width: 800px) {
   .container {
     flex-direction: row-reverse;

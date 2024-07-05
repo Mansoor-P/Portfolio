@@ -56,10 +56,6 @@ function Hero() {
           <button className="hover">Resume</button>
         </a>
       </div>
-      <a href="#top" className={styles.up_button}>
-       
-        <span className={styles.arrow}  >↑</span>
-      </a>
     </section>
   );
 }

@@ -18,11 +18,9 @@ const projects = [
     },
     uiFeatures: ["Responsive design", "Room booking", "Booking management"],
     extraFields: {
-      deployment: "Deployed on Heroku",
-      versionControl: "GitHub",
-      contributors: ["Mansoor Pathikonda"],
       links: {
         github: "https://github.com/Mansoor-P/hotel_booking",
+        liveDemo: "",
       },
     },
   },
@@ -52,11 +50,9 @@ const projects = [
       "Payment integration",
     ],
     extraFields: {
-      deployment: "Deployed on AWS",
-      versionControl: "GitHub",
-      contributors: ["Mansoor Pathikonda"],
       links: {
         github: "https://github.com/Mansoor-P/Ecommerce-website",
+        liveDemo: "",
       },
     },
   },
@@ -78,11 +74,9 @@ const projects = [
       "Order tracking",
     ],
     extraFields: {
-      deployment: "Deployed on Netlify",
-      versionControl: "GitHub",
-      contributors: ["Mansoor Pathikonda"],
       links: {
         github: "https://github.com/Mansoor-P/food-delivery-app",
+        liveDemo: "",
       },
     },
   },
@@ -104,11 +98,9 @@ const projects = [
       "Contact form",
     ],
     extraFields: {
-      deployment: "Deployed on GitHub Pages",
-      versionControl: "GitHub",
-      contributors: ["Mansoor Pathikonda"],
       links: {
         github: "https://github.com/Mansoor-P/Portfolio",
+        liveDemo: "",
       },
     },
   },
@@ -130,11 +122,9 @@ const projects = [
       "User profile management",
     ],
     extraFields: {
-      deployment: "Deployed on Heroku",
-      versionControl: "GitHub",
-      contributors: ["Mansoor Pathikonda"],
       links: {
         github: "#",
+        liveDemo: "",
       },
     },
   },
