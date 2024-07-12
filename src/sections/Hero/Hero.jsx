@@ -49,8 +49,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          Passionate about developing modern web applications using React and Spring Boot, with a focus on delivering high-quality solutions for commercial businesses.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
