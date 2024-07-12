@@ -36,7 +36,7 @@ function Projects() {
         <ProjectCard
           src={Ecart}
           linkGit="https://github.com/Mansoor-P/E-Commerce-Website"
-          linkDemo=""
+          linkDemo="https://mansoorsecommercewebsite.netlify.app/"
           h3="E-Cart"
           p="E-cart"
         />
