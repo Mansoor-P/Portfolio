@@ -1,17 +1,21 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./ProjectsStyles.module.css";
-import job from "../../assets/job.svg";
-import food from "../../assets/food.svg";
-import portfolio from "../../assets/portfolio.svg";
-import Ecart from "../../assets/E-cart.svg";
-import Hotel from "../../assets/hotel.svg";
-
 import ProjectCard from "../../common/ProjectCard";
+import projects from "./ProjectsData";
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
+<<<<<<< HEAD
+        {projects.map((project) => (
+          <Link to={`/projects/${project.id}`} key={project.id}>
+            <ProjectCard title={project.title} image={project.image} />
+          </Link>
+        ))}
+=======
         <ProjectCard
           src={job}
           linkGit="https://mj-career.netlify.app/"
@@ -47,6 +51,7 @@ function Projects() {
           h3="Hotel Booking Aeb App"
           p="Hotel Booking Aeb App"
         />
+>>>>>>> 85e2e2aa893684adda1fa221700a03e2b58fa8a5
       </div>
     </section>
   );

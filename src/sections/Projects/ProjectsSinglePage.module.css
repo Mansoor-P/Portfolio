@@ -1,0 +1,187 @@
+.container {
+  display: flex;
+  max-width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebarTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #0987f2;
+  margin-bottom: 15px;
+}
+
+.sidebarList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebarListItem {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.sidebarLink {
+  text-decoration: none;
+  color: #0987f2;
+  transition: color 0.3s ease;
+}
+
+.sidebarLink:hover {
+  color: #0d47a1;
+}
+
+.mainContent {
+  flex: 3;
+}
+
+.projectTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0987f2;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.projectImage {
+  width: 100%;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projectDescription {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.viewProjectLink {
+  display: inline-block;
+  margin-right: 20px;
+  background-color: #0987f2;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.viewProjectLink:hover {
+  background-color: #0d47a1;
+}
+
+.section {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0987f2;
+  margin-bottom: 15px;
+}
+
+.techStackItem,
+.additionalInfoItem {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-bottom: 20px;
+  }
+
+  .projectImage {
+    height: 200px;
+  }
+
+  .projectTitle {
+    font-size: 1.5rem;
+  }
+
+  .projectDescription {
+    padding-top: 10px;
+    font-size: 1rem;
+  }
+
+  .viewProjectLink {
+    padding: 10px 20px;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .techStackItem,
+  .additionalInfoItem {
+    font-size: 1rem;
+  }
+
+  ul {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projectImage {
+    height: 400px;
+  }
+
+  .projectTitle {
+    font-size: 2rem;
+  }
+
+  .projectDescription {
+    font-size: 1.2rem;
+  }
+
+  .viewProjectLink {
+    padding: 14px 28px;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .techStackItem,
+  .additionalInfoItem {
+    font-size: 1.2rem;
+  }
+
+  ul li {
+    font-size: 1.2rem;
+  }
+}
