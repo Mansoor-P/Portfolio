@@ -1,57 +1,44 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styles from "./ProjectsStyles.module.css";
-import ProjectCard from "../../common/ProjectCard";
-import projects from "./ProjectsData";
+import React from 'react';
+import styles from './ProjectsStyles.module.css';
+import shopping from '../../assets/shopping.gif';
+import food from '../../assets/food.gif';
+import portfolio from '../../assets/portfolio.gif';
+import jobsearching from '../../assets/jobsearching.gif';
+import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
   return (
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-<<<<<<< HEAD
-        {projects.map((project) => (
-          <Link to={`/projects/${project.id}`} key={project.id}>
-            <ProjectCard title={project.title} image={project.image} />
-          </Link>
-        ))}
-=======
         <ProjectCard
-          src={job}
-          linkGit="https://mj-career.netlify.app/"
-          linkDemo="https://mj-career.netlify.app/"
-          h3="Job Searching Portal"
-          p=" A dynamic web application "
+          src={jobsearching}
+          link="https://github.com/Mansoor-P/jobsmicroservices"
+          h3="Job Searching"
+          // p="jobapi"
+          description="A project focused on job searching with API integration."
+        />
+        <ProjectCard
+          src={shopping}
+          link="https://github.com/Mansoor-P/E-Commerce-Website"
+          h3="Shopping"
+          // p="Shopping"
+          description="An e-commerce project for shopping various products."
         />
         <ProjectCard
           src={food}
-          linkGit="https://github.com/Mansoor-P/food-delivery-app"
-          linkDemo="https://mansoorfoodapp.netlify.app/"
-          h3="Food  Delivering App"
-          p="Hamburger Restaurant"
+          link="https://github.com/Mansoor-P/food-delivery-app"
+          h3="Food Shop"
+          // p="Food Shop"
+          description="An online platform for ordering food items."
         />
         <ProjectCard
           src={portfolio}
-          linkGit="https://github.com/Mansoor-P/Portfolio"
-          linkDemo="https://mansoorsportfolio.netlify.app/"
-          h3="Portfolio"
-          p="portfolio"
+          link="https://github.com/Mansoor-P/Portfolio"
+          h3="Portfolio App"
+          // p="Portfolio App"
+          description="An application for showcasing personal or professional portfolios."
         />
-        <ProjectCard
-          src={Ecart}
-          linkGit="https://github.com/Mansoor-P/E-Commerce-Website"
-          linkDemo="https://mansoorsecommercewebsite.netlify.app/"
-          h3="E-Cart"
-          p="E-cart"
-        />
-        <ProjectCard
-          src={Hotel}
-          linkGit="https://github.com/Mansoor-P/hotel_booking"
-          linkDemo=""
-          h3="Hotel Booking Aeb App"
-          p="Hotel Booking Aeb App"
-        />
->>>>>>> 85e2e2aa893684adda1fa221700a03e2b58fa8a5
       </div>
     </section>
   );
