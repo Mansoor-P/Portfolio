@@ -1,14 +1,19 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
-import LandingPage from "./LandingPage";
-import ProjectsSinglePage from "./sections/Projects/ProjectsSinglePage";
+import './App.css';
+import Contact from './sections/Contact/Contact';
+import Footer from './sections/Footer/Footer';
+import Hero from './sections/Hero/Hero';
+import Projects from './sections/Projects/Projects';
+import Skills from './sections/Skills/Skills';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/projects/:id" element={<ProjectsSinglePage />} />
-    </Routes>
+    <>
+      <Hero />
+      <Projects />
+      <Skills />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
