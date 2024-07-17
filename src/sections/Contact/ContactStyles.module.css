@@ -1,102 +1,79 @@
-
-.footer {
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 20px 20px;
-  text-align: center;
-  color: #333;
-
-
-}
-
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
 }
 
-.section {
-  flex: 1;
-  margin: 10px;
-  max-width: 300px;
-  text-align: left;
-}
-
-
-.email {
-  display: block;
-  color: #0987f2;
-  margin-bottom: 20px;
-  text-decoration: none;
-}
-
-.socialIcons {
+form {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.icon {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #0987f2;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
-  text-decoration: none;
-  color: #0987f2;
+textarea,
+input:not([type='submit']) {
+  height: 50px;
+  padding-left: 16px;
+  width: 250px;
 }
 
-.emailInput {
-  padding: 10px;
-  width: 92.5%;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
+textarea {
+  padding-top: 16px;
+  resize: none;
+  height: 250px;
 }
 
-.subscribeButton {
-  padding: 10px 10px;
-  width: 100%;
+input,
+textarea {
+  border-radius: 20px;
+  border: #888 1px solid;
+  box-sizing: border-box;
+  justify-self: center;
+  background-color: var(--background-color);
+  color: var(--form-text-color);
+}
 
-  background: #0987f2;
-  color: #fff;
+::placeholder {
+  color: var(--form-text-color);
+}
+
+input[type='submit'] {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 20px;
+  width: 126px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  margin: auto;
 }
 
-.footerBottom {
-  margin-top: 40px;
-  font-size: 0.9em;
-  color: #999;
+input[type='submit']:hover {
+  transform: scale(1.05);
 }
 
-.footerBottom span {
-  color: #ba79e6;
+input[type='submit']:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
-.hr{
-  width: 80%;
-  background-color: gray;
-  height: 1.5px;
-}
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: center;
+
+@media (width >= 800px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 600px;
+    font-size: 20px;
   }
-
-  .section {
-    max-width: 100%;
-    text-align: center;
+  form {
+    gap: 40px;
   }
+}
 
-  .socialIcons {
-    justify-content: center;
-  }
-
-  .emailInput {
-    width: 92.5%;
+@media (width >= 1400px) {
+  textarea,
+  input:not([type='submit']) {
+    width: 800px;
   }
 }
